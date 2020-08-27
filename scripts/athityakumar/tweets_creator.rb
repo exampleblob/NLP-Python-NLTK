@@ -1,2 +1,2 @@
 begin
-  puts "Enter dir
+  puts "Enter directory to our rails project : 
