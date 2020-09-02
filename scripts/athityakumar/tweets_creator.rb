@@ -1,3 +1,5 @@
 begin
   puts "Enter directory to our rails project : (/home/user/...) "
-  dir = gets.chom
+  dir = gets.chomp
+  Dir.chdir(dir)
+  puts "1: Home time-line tweets
