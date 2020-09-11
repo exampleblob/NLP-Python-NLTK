@@ -4,4 +4,6 @@ begin
   Dir.chdir(dir)
   puts "1: Home time-line tweets \n2: Search by key-word tweets \nEnter your choice : "
   c = gets.chomp.to_i
-  if
+  if c == 1
+    while true
+      system "rake
