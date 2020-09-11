@@ -6,4 +6,7 @@ begin
   c = gets.chomp.to_i
   if c == 1
     while true
-      system "rake
+      system "rake twitter_status:fetch_tweets"
+    end
+  else
+    puts "
