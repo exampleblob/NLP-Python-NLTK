@@ -10,4 +10,6 @@ begin
     end
   else
     puts "Enter search query : (#technology)"
- 
+    q = gets.chomp
+    while true
+      system "rake 'twitt
