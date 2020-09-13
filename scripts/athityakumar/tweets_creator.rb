@@ -12,4 +12,6 @@ begin
     puts "Enter search query : (#technology)"
     q = gets.chomp
     while true
-      system "rake 'twitt
+      system "rake 'twitter_status:fetch_tweets_search[#{q}]'"
+    end
+ 
