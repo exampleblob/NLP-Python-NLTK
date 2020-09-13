@@ -9,4 +9,5 @@ begin
       system "rake twitter_status:fetch_tweets"
     end
   else
-    puts "
+    puts "Enter search query : (#technology)"
+ 
