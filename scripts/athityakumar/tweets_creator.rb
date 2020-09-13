@@ -14,4 +14,7 @@ begin
     while true
       system "rake 'twitter_status:fetch_tweets_search[#{q}]'"
     end
- 
+  end  
+rescue
+  puts "Some error."
+end    
