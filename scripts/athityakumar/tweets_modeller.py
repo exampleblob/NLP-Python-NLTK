@@ -7,4 +7,7 @@ from stop_words import get_stop_words
 from nltk.stem.porter import PorterStemmer
 from gensim import corpora, models
 import gensim
-import numpy a
+import numpy as np
+import MySQLdb
+import string
+from 
