@@ -11,4 +11,5 @@ import numpy as np
 import MySQLdb
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.decompositi
+from sklearn.decomposition import NMF
+import tweets_read
