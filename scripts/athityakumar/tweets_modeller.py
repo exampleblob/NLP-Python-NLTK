@@ -10,4 +10,4 @@ import gensim
 import numpy as np
 import MySQLdb
 import string
-from 
+from sklearn.feature_extraction.text import TfidfVe
