@@ -15,4 +15,6 @@ from sklearn.decomposition import NMF
 import tweets_reader as tr
 
 def clean(model,index) :
-  ind
+  index = index + 1
+  dirty = ["+",".","*"]
+  while
