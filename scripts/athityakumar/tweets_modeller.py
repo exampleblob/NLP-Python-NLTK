@@ -17,4 +17,5 @@ import tweets_reader as tr
 def clean(model,index) :
   index = index + 1
   dirty = ["+",".","*"]
-  while
+  while model.find("0.") != -1 :
+    prob = m
