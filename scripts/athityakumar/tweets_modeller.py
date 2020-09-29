@@ -18,4 +18,4 @@ def clean(model,index) :
   index = index + 1
   dirty = ["+",".","*"]
   while model.find("0.") != -1 :
-    prob = m
+    prob = model[model.find("0."):model.find("
