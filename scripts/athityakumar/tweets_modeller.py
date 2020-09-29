@@ -19,4 +19,6 @@ def clean(model,index) :
   dirty = ["+",".","*"]
   while model.find("0.") != -1 :
     prob = model[model.find("0."):model.find("0.")+6]
-    model = string.replace(mode
+    model = string.replace(model,prob,"")
+  for element in dirty :    
+ 
