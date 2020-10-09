@@ -21,4 +21,5 @@ def clean(model,index) :
     prob = model[model.find("0."):model.find("0.")+6]
     model = string.replace(model,prob,"")
   for element in dirty :    
-    model = string.replace(model,eleme
+    model = string.replace(model,element,"")
+  model = "Topic #"+str(index)+": "+m
