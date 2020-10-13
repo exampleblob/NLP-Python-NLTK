@@ -25,4 +25,7 @@ def clean(model,index) :
   model = "Topic #"+str(index)+": "+model
   return model
 
-all_tweets = tr.get_al
+all_tweets = tr.get_all_tweets()  
+doc_set = []
+count = 0
+for index 
