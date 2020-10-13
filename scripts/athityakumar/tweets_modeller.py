@@ -22,4 +22,7 @@ def clean(model,index) :
     model = string.replace(model,prob,"")
   for element in dirty :    
     model = string.replace(model,element,"")
-  model = "Topic #"+str(index)+": "+m
+  model = "Topic #"+str(index)+": "+model
+  return model
+
+all_tweets = tr.get_al
