@@ -29,4 +29,7 @@ all_tweets = tr.get_all_tweets()
 doc_set = []
 count = 0
 for index in all_tweets :
-  doc_set.append(all_tweets[i
+  doc_set.append(all_tweets[index]["clean_tweet"])
+  count = count + 1
+
+to
