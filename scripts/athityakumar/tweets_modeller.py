@@ -32,4 +32,5 @@ for index in all_tweets :
   doc_set.append(all_tweets[index]["clean_tweet"])
   count = count + 1
 
-to
+tokenizer = RegexpTokenizer(r'\w+')
+en_stop = get_st
