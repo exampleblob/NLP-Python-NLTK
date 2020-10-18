@@ -33,4 +33,5 @@ for index in all_tweets :
   count = count + 1
 
 tokenizer = RegexpTokenizer(r'\w+')
-en_stop = get_st
+en_stop = get_stop_words('en')
+en_stop.extend(["s","t","rs","ht
