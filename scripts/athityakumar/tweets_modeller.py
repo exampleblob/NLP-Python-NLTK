@@ -38,4 +38,6 @@ en_stop.extend(["s","t","rs","http","amp","rt","https","0","1","2","3","4","5","
 p_stemmer = PorterStemmer()  
 texts = []
 
-# loop through 
+# loop through document list
+for i in doc_set:
+  
