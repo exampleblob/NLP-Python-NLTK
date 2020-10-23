@@ -40,4 +40,5 @@ texts = []
 
 # loop through document list
 for i in doc_set:
-  
+    
+    # clean and t
