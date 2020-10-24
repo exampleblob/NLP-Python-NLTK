@@ -41,4 +41,6 @@ texts = []
 # loop through document list
 for i in doc_set:
     
-    # clean and t
+    # clean and tokenize document string
+    raw = i.lower()
+ 
