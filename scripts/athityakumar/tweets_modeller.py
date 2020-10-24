@@ -43,4 +43,6 @@ for i in doc_set:
     
     # clean and tokenize document string
     raw = i.lower()
- 
+    tokens = tokenizer.tokenize(raw)
+
+    #
