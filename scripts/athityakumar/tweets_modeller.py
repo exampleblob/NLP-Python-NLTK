@@ -45,4 +45,4 @@ for i in doc_set:
     raw = i.lower()
     tokens = tokenizer.tokenize(raw)
 
-    #
+    # remove stop words from token
