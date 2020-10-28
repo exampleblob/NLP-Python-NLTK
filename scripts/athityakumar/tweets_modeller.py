@@ -46,4 +46,6 @@ for i in doc_set:
     tokens = tokenizer.tokenize(raw)
 
     # remove stop words from tokens
-    stopped_tokens = [i for i in tokens if not
+    stopped_tokens = [i for i in tokens if not i.lower() in en_stop]
+    
+    
