@@ -48,4 +48,5 @@ for i in doc_set:
     # remove stop words from tokens
     stopped_tokens = [i for i in tokens if not i.lower() in en_stop]
     
-    
+    # stem tokens
+    stemmed_tokens = [p_stemme
