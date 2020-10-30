@@ -49,4 +49,5 @@ for i in doc_set:
     stopped_tokens = [i for i in tokens if not i.lower() in en_stop]
     
     # stem tokens
-    stemmed_tokens = [p_stemme
+    stemmed_tokens = [p_stemmer.stem(i) for i in stopped_tokens]
+    
