@@ -51,3 +51,5 @@ for i in doc_set:
     # stem tokens
     stemmed_tokens = [p_stemmer.stem(i) for i in stopped_tokens]
     
+    # add tokens to list
+    texts.a
