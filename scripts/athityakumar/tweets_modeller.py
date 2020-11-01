@@ -52,4 +52,6 @@ for i in doc_set:
     stemmed_tokens = [p_stemmer.stem(i) for i in stopped_tokens]
     
     # add tokens to list
-    texts.a
+    texts.append(stemmed_tokens)
+
+# turn our tokenized 
