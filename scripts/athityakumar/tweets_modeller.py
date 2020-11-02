@@ -54,4 +54,4 @@ for i in doc_set:
     # add tokens to list
     texts.append(stemmed_tokens)
 
-# turn our tokenized 
+# turn our tokenized documents into a id <-> term 
