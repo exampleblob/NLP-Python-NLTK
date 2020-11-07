@@ -55,4 +55,6 @@ for i in doc_set:
     texts.append(stemmed_tokens)
 
 # turn our tokenized documents into a id <-> term dictionary
-dictionary = corpora.Diction
+dictionary = corpora.Dictionary(texts)
+    
+# convert tokenized documents
