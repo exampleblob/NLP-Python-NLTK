@@ -57,4 +57,5 @@ for i in doc_set:
 # turn our tokenized documents into a id <-> term dictionary
 dictionary = corpora.Dictionary(texts)
     
-# convert tokenized documents
+# convert tokenized documents into a document-term matrix
+corpus = [dictionar
