@@ -58,4 +58,6 @@ for i in doc_set:
 dictionary = corpora.Dictionary(texts)
     
 # convert tokenized documents into a document-term matrix
-corpus = [dictionar
+corpus = [dictionary.doc2bow(text) for text in texts]
+
+#generate 
