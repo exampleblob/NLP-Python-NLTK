@@ -60,4 +60,7 @@ dictionary = corpora.Dictionary(texts)
 # convert tokenized documents into a document-term matrix
 corpus = [dictionary.doc2bow(text) for text in texts]
 
-#generate 
+#generate LDA model
+num_topics = 10
+num_words = 10
+ldam
