@@ -63,4 +63,4 @@ corpus = [dictionary.doc2bow(text) for text in texts]
 #generate LDA model
 num_topics = 10
 num_words = 10
-ldam
+ldamodel = gensim.models.ldamodel.LdaModel(cor
