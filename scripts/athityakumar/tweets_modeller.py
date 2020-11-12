@@ -66,4 +66,5 @@ num_words = 10
 ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=num_topics, id2word = dictionary)
 
 i = 0
-while i < num_topics
+while i < num_topics:
+  print(clean(ldamodel.print_topics(nu
