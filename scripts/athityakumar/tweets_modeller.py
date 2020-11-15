@@ -67,4 +67,5 @@ ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=num_topics, id2wor
 
 i = 0
 while i < num_topics:
-  print(clean(ldamodel.print_topics(num_topics=num_topics,num_words=num_words)[i]
+  print(clean(ldamodel.print_topics(num_topics=num_topics,num_words=num_words)[i][1],i))
+  i = i+1
