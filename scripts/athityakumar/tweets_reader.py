@@ -9,4 +9,5 @@ from gensim import corpora, models
 import gensim
 import numpy as np
 import MySQLdb
-import 
+import string
+from sklearn.feature_extraction
