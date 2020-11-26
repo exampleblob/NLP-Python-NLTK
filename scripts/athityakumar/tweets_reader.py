@@ -10,4 +10,5 @@ import gensim
 import numpy as np
 import MySQLdb
 import string
-from sklearn.feature_extraction
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from
