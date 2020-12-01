@@ -12,4 +12,6 @@ import MySQLdb
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.decomposition import NMF
-impo
+import tweets_database as td
+
+def da
