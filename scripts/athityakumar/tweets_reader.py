@@ -15,4 +15,6 @@ from sklearn.decomposition import NMF
 import tweets_database as td
 
 def database_login() :
-  return MySQLdb.connect(td.host(),td.user(),td.password(),td.data
+  return MySQLdb.connect(td.host(),td.user(),td.password(),td.database()) 
+  
+def database_read(table_name) :
