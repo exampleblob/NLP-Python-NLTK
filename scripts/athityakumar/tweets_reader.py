@@ -18,3 +18,5 @@ def database_login() :
   return MySQLdb.connect(td.host(),td.user(),td.password(),td.database()) 
   
 def database_read(table_name) :
+  cur = database_login().cursor()
+  cur.e
