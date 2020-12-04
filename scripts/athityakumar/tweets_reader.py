@@ -19,4 +19,5 @@ def database_login() :
   
 def database_read(table_name) :
   cur = database_login().cursor()
-  cur.e
+  cur.execute("SELECT * FROM "+table_name)
+  retu
