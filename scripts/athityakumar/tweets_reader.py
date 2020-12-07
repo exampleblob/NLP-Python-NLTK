@@ -20,4 +20,7 @@ def database_login() :
 def database_read(table_name) :
   cur = database_login().cursor()
   cur.execute("SELECT * FROM "+table_name)
-  retu
+  return cur.fetchall()
+
+def database_end() :
+  datab
