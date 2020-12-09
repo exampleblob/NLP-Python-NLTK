@@ -23,4 +23,7 @@ def database_read(table_name) :
   return cur.fetchall()
 
 def database_end() :
-  datab
+  database_login().close()
+
+def remove_link(tweet) :
+  w
