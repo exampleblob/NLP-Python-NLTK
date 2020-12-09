@@ -26,4 +26,4 @@ def database_end() :
   database_login().close()
 
 def remove_link(tweet) :
-  w
+  while tweet.find("https://t.co/") != -1 
