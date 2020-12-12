@@ -28,3 +28,4 @@ def database_end() :
 def remove_link(tweet) :
   while tweet.find("https://t.co/") != -1 :
     link = tweet[tweet.find("https://t.co/"):tweet.find("https://t.co/")+23]
+    tweet = string.replace(tweet,li
