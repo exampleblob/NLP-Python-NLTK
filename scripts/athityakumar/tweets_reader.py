@@ -31,4 +31,5 @@ def remove_link(tweet) :
     tweet = string.replace(tweet,link,"")
   return tweet
  
-# print al
+# print all the first cell of all the rows
+def get
