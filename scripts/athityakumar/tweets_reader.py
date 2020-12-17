@@ -34,4 +34,5 @@ def remove_link(tweet) :
 # print all the first cell of all the rows
 def get_all_tweets() :
   tweets = {}
-  for row in dat
+  for row in database_read("twitter_tweets"):
+      h
