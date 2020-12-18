@@ -35,4 +35,6 @@ def remove_link(tweet) :
 def get_all_tweets() :
   tweets = {}
   for row in database_read("twitter_tweets"):
-      h
+      hashtag =  row[2]
+      mention = row[10]
+      
