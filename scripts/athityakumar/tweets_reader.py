@@ -37,4 +37,5 @@ def get_all_tweets() :
   for row in database_read("twitter_tweets"):
       hashtag =  row[2]
       mention = row[10]
-      
+      raw_tweet = row[1]
+      clean_tweet = raw_tw
