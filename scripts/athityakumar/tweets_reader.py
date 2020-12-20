@@ -38,4 +38,6 @@ def get_all_tweets() :
       hashtag =  row[2]
       mention = row[10]
       raw_tweet = row[1]
-      clean_tweet = raw_tw
+      clean_tweet = raw_tweet
+      if hashtag != None :
+          c
