@@ -40,4 +40,4 @@ def get_all_tweets() :
       raw_tweet = row[1]
       clean_tweet = raw_tweet
       if hashtag != None :
-          c
+          clean_tweet = string.replace(clean_tweet,has
