@@ -41,4 +41,6 @@ def get_all_tweets() :
       clean_tweet = raw_tweet
       if hashtag != None :
           clean_tweet = string.replace(clean_tweet,hashtag,"")
-          clean_tweet = string.replace(c
+          clean_tweet = string.replace(clean_tweet,"#","")
+      if mention != None :
+     
