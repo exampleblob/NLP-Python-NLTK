@@ -46,4 +46,5 @@ def get_all_tweets() :
           clean_tweet = string.replace(clean_tweet,mention,"")
           clean_tweet = string.replace(clean_tweet,"@","")
       
-      c
+      clean_tweet = remove_link(clean_tweet)
+    
