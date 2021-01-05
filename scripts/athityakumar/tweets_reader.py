@@ -48,4 +48,4 @@ def get_all_tweets() :
       
       clean_tweet = remove_link(clean_tweet)
       id = row[0]
-      tweets[id] = { "clean_tweet": clean_tweet , "has
+      tweets[id] = { "clean_tweet": clean_tweet , "hashtag": hashtag , "mention" : mentio
