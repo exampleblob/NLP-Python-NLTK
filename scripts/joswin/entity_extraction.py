@@ -1,3 +1,4 @@
 
 # from corenlp import StanfordCoreNLP
-impo
+import nltk
+from nltk.tag.stanford imp
