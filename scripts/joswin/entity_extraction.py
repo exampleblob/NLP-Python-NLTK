@@ -8,4 +8,4 @@ def sent_tokenize_withnewline(text):
      In our case, it makes sense to do so. '''
     sentences = [] 
     for para in text.split('\n'): 
- 
+        sentences.extend(nltk.sent_tokenize(par
