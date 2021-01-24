@@ -11,4 +11,5 @@ def sent_tokenize_withnewline(text):
         sentences.extend(nltk.sent_tokenize(para))
     return sentences 
 
-class StanfordNE
+class StanfordNERTaggerExtractor(object):
+    "
