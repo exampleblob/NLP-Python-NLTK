@@ -12,4 +12,5 @@ def sent_tokenize_withnewline(text):
     return sentences 
 
 class StanfordNERTaggerExtractor(object):
-    "
+    """docstring for ClassName"""
+    def __init__(s
