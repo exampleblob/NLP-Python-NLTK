@@ -14,4 +14,4 @@ def sent_tokenize_withnewline(text):
 class StanfordNERTaggerExtractor(object):
     """docstring for ClassName"""
     def __init__(self):
-        self.st = StanfordNERTagger('int
+        self.st = StanfordNERTagger('intent_class_models/stanford-jars/english.all.3
