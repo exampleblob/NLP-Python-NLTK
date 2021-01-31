@@ -16,4 +16,5 @@ class StanfordNERTaggerExtractor(object):
     def __init__(self):
         self.st = StanfordNERTagger('intent_class_models/stanford-jars/english.all.3class.distsim.crf.ser.gz' ,
             "intent_class_models/stanford-jars/stanford-ner.jar" )
-        # self.st = StanfordNERTagger('en
+        # self.st = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz' ,
+  
