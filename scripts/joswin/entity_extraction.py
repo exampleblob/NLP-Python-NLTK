@@ -19,4 +19,6 @@ class StanfordNERTaggerExtractor(object):
         # self.st = StanfordNERTagger('english.all.3class.distsim.crf.ser.gz' ,
         #     'stanford-ner.jar' )
 
-    def tag_text_sin
+    def tag_text_single(self,text):
+        '''
+        :p
