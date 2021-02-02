@@ -21,4 +21,5 @@ class StanfordNERTaggerExtractor(object):
 
     def tag_text_single(self,text):
         '''
-        :p
+        :param text:
+        :return:
