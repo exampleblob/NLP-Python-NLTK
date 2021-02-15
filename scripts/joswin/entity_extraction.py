@@ -23,3 +23,5 @@ class StanfordNERTaggerExtractor(object):
         '''
         :param text:
         :return:
+        '''
+        # assert type(text) == s
