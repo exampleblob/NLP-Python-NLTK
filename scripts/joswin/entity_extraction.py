@@ -24,4 +24,5 @@ class StanfordNERTaggerExtractor(object):
         :param text:
         :return:
         '''
-        # assert type(text) == s
+        # assert type(text) == str
+        sents = self.st.tag(nl
