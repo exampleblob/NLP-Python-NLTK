@@ -28,4 +28,4 @@ class StanfordNERTaggerExtractor(object):
         sents = self.st.tag(nltk.word_tokenize(text))
         return sents
 
-  
+    def identify_NER_tags_single(self
