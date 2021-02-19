@@ -25,4 +25,7 @@ class StanfordNERTaggerExtractor(object):
         :return:
         '''
         # assert type(text) == str
-        sents = self.st.tag(nl
+        sents = self.st.tag(nltk.word_tokenize(text))
+        return sents
+
+  
