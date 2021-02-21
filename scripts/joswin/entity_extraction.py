@@ -31,4 +31,6 @@ class StanfordNERTaggerExtractor(object):
     def identify_NER_tags_single(self,text_tag,tag_to_find):
         '''
         :param text_tag: Tagged text
-        :par
+        :param tag_to_find:
+        :return:
+       
