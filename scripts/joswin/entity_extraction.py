@@ -33,4 +33,6 @@ class StanfordNERTaggerExtractor(object):
         :param text_tag: Tagged text
         :param tag_to_find:
         :return:
-       
+        '''
+        tag_strs = []
+      
