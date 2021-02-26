@@ -35,4 +35,5 @@ class StanfordNERTaggerExtractor(object):
         :return:
         '''
         tag_strs = []
-      
+        prev_wrd_tag = False
+        for wrd,t
