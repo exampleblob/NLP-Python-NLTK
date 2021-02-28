@@ -38,4 +38,5 @@ class StanfordNERTaggerExtractor(object):
         prev_wrd_tag = False
         for wrd,tag in text_tag:
             if tag == tag_to_find:
-                if not pr
+                if not prev_wrd_tag:
+                    tag_st
