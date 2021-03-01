@@ -39,4 +39,6 @@ class StanfordNERTaggerExtractor(object):
         for wrd,tag in text_tag:
             if tag == tag_to_find:
                 if not prev_wrd_tag:
-                    tag_st
+                    tag_strs.append(wrd)
+                else:
+           
