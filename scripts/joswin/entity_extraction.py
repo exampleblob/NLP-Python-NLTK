@@ -41,4 +41,5 @@ class StanfordNERTaggerExtractor(object):
                 if not prev_wrd_tag:
                     tag_strs.append(wrd)
                 else:
-           
+                    prev_wrd = tag_strs.pop()
+  
