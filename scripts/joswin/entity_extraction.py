@@ -42,4 +42,4 @@ class StanfordNERTaggerExtractor(object):
                     tag_strs.append(wrd)
                 else:
                     prev_wrd = tag_strs.pop()
-  
+                    new_wrd = prev_wrd+' '+wrd
