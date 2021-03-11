@@ -47,4 +47,6 @@ class StanfordNERTaggerExtractor(object):
                 prev_wrd_tag = True
             else:
                 prev_wrd_tag = False
-      
+        tags_final = []
+        for wrd in tag_strs:
+       
