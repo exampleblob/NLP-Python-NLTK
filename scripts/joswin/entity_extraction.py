@@ -49,4 +49,5 @@ class StanfordNERTaggerExtractor(object):
                 prev_wrd_tag = False
         tags_final = []
         for wrd in tag_strs:
-       
+            if wrd not in tags_final:
+     
