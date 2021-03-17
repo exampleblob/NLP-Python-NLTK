@@ -50,4 +50,5 @@ class StanfordNERTaggerExtractor(object):
         tags_final = []
         for wrd in tag_strs:
             if wrd not in tags_final:
-     
+                tags_final.append(wrd)
+       
