@@ -51,4 +51,6 @@ class StanfordNERTaggerExtractor(object):
         for wrd in tag_strs:
             if wrd not in tags_final:
                 tags_final.append(wrd)
-       
+        return tags_final
+
+    def tag_tex
