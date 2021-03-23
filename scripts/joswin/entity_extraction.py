@@ -55,4 +55,4 @@ class StanfordNERTaggerExtractor(object):
 
     def tag_text_multi(self,text):
         ''' '''
-        tokenized_sents = [nltk.word_tokenize(sent)
+        tokenized_sents = [nltk.word_tokenize(sent) for sent in nltk.sent_tokenize(text)]
