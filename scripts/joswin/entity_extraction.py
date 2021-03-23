@@ -53,4 +53,6 @@ class StanfordNERTaggerExtractor(object):
                 tags_final.append(wrd)
         return tags_final
 
-    def tag_tex
+    def tag_text_multi(self,text):
+        ''' '''
+        
