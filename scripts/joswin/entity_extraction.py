@@ -60,4 +60,5 @@ class StanfordNERTaggerExtractor(object):
 
     def identify_NER_tags_multi(self,text_tag,tag_to_find):
         ''' '''
-    
+        tag_strs = []
+        for sent_tag
