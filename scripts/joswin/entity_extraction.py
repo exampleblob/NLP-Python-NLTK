@@ -58,4 +58,6 @@ class StanfordNERTaggerExtractor(object):
         tokenized_sents = [nltk.word_tokenize(sent) for sent in nltk.sent_tokenize(text)]
         return self.st.tag_sents(tokenized_sents)
 
-    def identify_NER_tags_multi(self,te
+    def identify_NER_tags_multi(self,text_tag,tag_to_find):
+        ''' '''
+    
