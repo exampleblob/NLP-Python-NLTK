@@ -67,4 +67,5 @@ class StanfordNERTaggerExtractor(object):
                     tag_strs.append(wrd)
         return tag_strs
 
-    def tag_text_multi_from_sin
+    def tag_text_multi_from_single(self,ner_tags):
+        ''' converting 
