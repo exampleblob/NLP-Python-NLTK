@@ -64,4 +64,5 @@ class StanfordNERTaggerExtractor(object):
         for sent_tag in text_tag:
             for wrd in self.identify_NER_tags_single(sent_tag,tag_to_find):
                 if wrd not in tag_strs:
-                    tag_
+                    tag_strs.append(wrd)
+        return ta
