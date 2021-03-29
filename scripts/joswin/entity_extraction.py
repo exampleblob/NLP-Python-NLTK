@@ -68,4 +68,4 @@ class StanfordNERTaggerExtractor(object):
         return tag_strs
 
     def tag_text_multi_from_single(self,ner_tags):
-        ''' converting 
+        ''' converting a huge single text tags into sentence bas
