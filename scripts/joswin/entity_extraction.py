@@ -69,4 +69,4 @@ class StanfordNERTaggerExtractor(object):
 
     def tag_text_multi_from_single(self,ner_tags):
         ''' converting a huge single text tags into sentence based tags
-        this is done bec
+        this is done because tagging sentence wise is slow. so 
