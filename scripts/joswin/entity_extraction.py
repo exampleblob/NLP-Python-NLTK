@@ -72,4 +72,5 @@ class StanfordNERTaggerExtractor(object):
         this is done because tagging sentence wise is slow. so we tag the entire text
         and split them after'''
         sents = ''
-  
+        for wrd,_ in ner_tags:
+        
