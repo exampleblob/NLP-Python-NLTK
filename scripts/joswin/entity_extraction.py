@@ -73,4 +73,5 @@ class StanfordNERTaggerExtractor(object):
         and split them after'''
         sents = ''
         for wrd,_ in ner_tags:
-        
+            sents += wrd+' '
+        sent_ta
