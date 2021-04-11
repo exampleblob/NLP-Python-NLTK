@@ -75,4 +75,6 @@ class StanfordNERTaggerExtractor(object):
         for wrd,_ in ner_tags:
             sents += wrd+' '
         sent_tags = [nltk.word_tokenize(sent) for sent in nltk.sent_tokenize(sents)]
-        cnt 
+        cnt = 0
+        final_tags = []
+        fo
