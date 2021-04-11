@@ -77,4 +77,5 @@ class StanfordNERTaggerExtractor(object):
         sent_tags = [nltk.word_tokenize(sent) for sent in nltk.sent_tokenize(sents)]
         cnt = 0
         final_tags = []
-        fo
+        for sent_ind in range(len(sent_tags)):
+   
