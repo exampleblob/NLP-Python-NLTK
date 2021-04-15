@@ -78,4 +78,5 @@ class StanfordNERTaggerExtractor(object):
         cnt = 0
         final_tags = []
         for sent_ind in range(len(sent_tags)):
-   
+            sent_tag_list = []
+            for
