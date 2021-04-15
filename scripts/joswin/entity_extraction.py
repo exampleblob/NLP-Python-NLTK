@@ -80,3 +80,5 @@ class StanfordNERTaggerExtractor(object):
         for sent_ind in range(len(sent_tags)):
             sent_tag_list = []
             for wrd_ind in range(len(sent_tags[sent_ind])):
+                try:
+         
