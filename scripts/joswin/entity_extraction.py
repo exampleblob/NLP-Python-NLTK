@@ -81,4 +81,4 @@ class StanfordNERTaggerExtractor(object):
             sent_tag_list = []
             for wrd_ind in range(len(sent_tags[sent_ind])):
                 try:
-         
+                    sent_tag_list.append(ner_
