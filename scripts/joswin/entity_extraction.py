@@ -83,4 +83,5 @@ class StanfordNERTaggerExtractor(object):
                 try:
                     sent_tag_list.append(ner_tags[cnt])
                     cnt += 1
- 
+                except:
+                 
