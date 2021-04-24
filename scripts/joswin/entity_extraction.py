@@ -87,3 +87,4 @@ class StanfordNERTaggerExtractor(object):
                     break
             final_tags.append(sent_tag_list)
         return final_tags
+
