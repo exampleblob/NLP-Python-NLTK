@@ -5,4 +5,5 @@ __author__ = 'joswin'
 import nltk,re
 
 def tree_travel(tree_obj,stopwords=[]):
-        ''' T
+        ''' Travel through a tree object
+      
