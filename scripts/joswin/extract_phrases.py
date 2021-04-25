@@ -4,4 +4,5 @@ __author__ = 'joswin'
 
 import nltk,re
 
-def tree_
+def tree_travel(tree_obj,stopwords=[]):
+        ''' T
