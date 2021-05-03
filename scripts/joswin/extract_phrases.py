@@ -7,4 +7,7 @@ import nltk,re
 def tree_travel(tree_obj,stopwords=[]):
         ''' Travel through a tree object
         :param tree_obj:
-        :param 
+        :param stopwords:
+        :return:
+        '''
+    
