@@ -12,4 +12,6 @@ def tree_travel(tree_obj,stopwords=[]):
         '''
         tree_data = []
         for e in list(tree_obj):
-            if isinstance(e,nltk.
+            if isinstance(e,nltk.tree.Tree):
+                # try:
+     
