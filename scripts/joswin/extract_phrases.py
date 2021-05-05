@@ -10,4 +10,5 @@ def tree_travel(tree_obj,stopwords=[]):
         :param stopwords:
         :return:
         '''
-    
+        tree_data = []
+        for e in 
