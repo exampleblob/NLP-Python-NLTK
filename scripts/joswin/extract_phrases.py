@@ -11,4 +11,5 @@ def tree_travel(tree_obj,stopwords=[]):
         :return:
         '''
         tree_data = []
-        for e in 
+        for e in list(tree_obj):
+            if isinstance(e,nltk.
