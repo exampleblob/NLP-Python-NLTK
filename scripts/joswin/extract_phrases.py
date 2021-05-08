@@ -16,4 +16,6 @@ def tree_travel(tree_obj,stopwords=[]):
                 # try:
                     tree_data.extend(tree_travel(e,stopwords))
                 # except:
-             
+                #     continue
+            else:
+          
