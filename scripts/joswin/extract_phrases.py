@@ -14,4 +14,6 @@ def tree_travel(tree_obj,stopwords=[]):
         for e in list(tree_obj):
             if isinstance(e,nltk.tree.Tree):
                 # try:
-                    tree_data.extend(tree_travel(e,s
+                    tree_data.extend(tree_travel(e,stopwords))
+                # except:
+             
