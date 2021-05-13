@@ -18,4 +18,5 @@ def tree_travel(tree_obj,stopwords=[]):
                 # except:
                 #     continue
             else:
+                if e[0] not in stopwords:
           
