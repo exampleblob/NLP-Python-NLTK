@@ -25,3 +25,5 @@ def tree_travel(tree_obj,stopwords=[]):
 class PhraseExtractor(object):
     def __init__(self):
         pass
+
+    def extract_phrase_treeinput(sel
