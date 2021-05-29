@@ -20,4 +20,6 @@ def tree_travel(tree_obj,stopwords=[]):
             else:
                 if e[0] not in stopwords:
                     tree_data+=[e[0]]
-        ret
+        return tree_data
+
+class PhraseExtractor(objec
