@@ -26,4 +26,6 @@ class PhraseExtractor(object):
     def __init__(self):
         pass
 
-    def extract_phrase_treeinput(sel
+    def extract_phrase_treeinput(self,tr,labels,stopwords=[]):
+        '''
+ 
