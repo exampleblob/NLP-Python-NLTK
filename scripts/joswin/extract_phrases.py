@@ -31,4 +31,6 @@ class PhraseExtractor(object):
         :param tr: tree object
         :param labels: list of label to extract phrase
         :param stopwords: stopwords list
-    
+        :return:
+        '''
+        temp_list
