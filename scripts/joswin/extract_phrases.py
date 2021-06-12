@@ -33,4 +33,6 @@ class PhraseExtractor(object):
         :param stopwords: stopwords list
         :return:
         '''
-        temp_list
+        temp_list=[]
+        for subtree in tr.subtrees():
+            if subt
