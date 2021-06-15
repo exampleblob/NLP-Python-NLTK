@@ -37,4 +37,4 @@ class PhraseExtractor(object):
         for subtree in tr.subtrees():
             if subtree.label() in labels:
                 tree_data = tree_travel(subtree,stopwords)
-                temp_list+=[' '.
+                temp_list+=[' '.join((e for e in list(tree_data)))
