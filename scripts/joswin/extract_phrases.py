@@ -40,4 +40,5 @@ class PhraseExtractor(object):
                 temp_list+=[' '.join((e for e in list(tree_data)))]
         return temp_list
 
-    def extract_phrase_treelistinput(s
+    def extract_phrase_treelistinput(self,ltrees,labels,stopwords=[]):
+        
