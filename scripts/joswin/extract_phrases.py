@@ -42,4 +42,5 @@ class PhraseExtractor(object):
 
     def extract_phrase_treelistinput(self,ltrees,labels,stopwords=[]):
         '''
-        :param ltrees: list of tree o
+        :param ltrees: list of tree objects
+        :param label: list of labels to
