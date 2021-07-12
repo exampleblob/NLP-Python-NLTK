@@ -47,4 +47,6 @@ class PhraseExtractor(object):
         :param stopwords:
         :return:
         '''
-    
+        outlist = []
+        for tr in ltrees:
+  
