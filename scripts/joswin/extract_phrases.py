@@ -44,4 +44,7 @@ class PhraseExtractor(object):
         '''
         :param ltrees: list of tree objects
         :param label: list of labels to extract phrase
-        :param stopw
+        :param stopwords:
+        :return:
+        '''
+    
