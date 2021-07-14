@@ -49,4 +49,4 @@ class PhraseExtractor(object):
         '''
         outlist = []
         for tr in ltrees:
-  
+            outlist.append(self.extrac
