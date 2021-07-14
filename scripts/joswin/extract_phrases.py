@@ -49,4 +49,7 @@ class PhraseExtractor(object):
         '''
         outlist = []
         for tr in ltrees:
-            outlist.append(self.extract_phrase_treeinput(tr,labels,stopword
+            outlist.append(self.extract_phrase_treeinput(tr,labels,stopwords))
+        return outlist
+
+class Phr
