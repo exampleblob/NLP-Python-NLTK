@@ -52,4 +52,5 @@ class PhraseExtractor(object):
             outlist.append(self.extract_phrase_treeinput(tr,labels,stopwords))
         return outlist
 
-class Phr
+class PhraseRemover(object):
+    """docstring for Phr
