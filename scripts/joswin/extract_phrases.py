@@ -55,4 +55,6 @@ class PhraseExtractor(object):
 class PhraseRemover(object):
     """docstring for PhraseRemover"""
     def __init__(self):
-      
+        pass
+    
+    def remove_phrase_treeinp
