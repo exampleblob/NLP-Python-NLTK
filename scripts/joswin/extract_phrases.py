@@ -53,4 +53,6 @@ class PhraseExtractor(object):
         return outlist
 
 class PhraseRemover(object):
-    """docstring for Phr
+    """docstring for PhraseRemover"""
+    def __init__(self):
+      
