@@ -58,4 +58,6 @@ class PhraseRemover(object):
         pass
     
     def remove_phrase_treeinput(self,tr,labels=None,stopwords=[]):
-        '
+        '''
+        :param tr: tree object
+        
