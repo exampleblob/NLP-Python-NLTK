@@ -57,4 +57,5 @@ class PhraseRemover(object):
     def __init__(self):
         pass
     
-    def remove_phrase_treeinp
+    def remove_phrase_treeinput(self,tr,labels=None,stopwords=[]):
+        '
