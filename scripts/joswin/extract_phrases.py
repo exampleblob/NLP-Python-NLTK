@@ -60,4 +60,5 @@ class PhraseRemover(object):
     def remove_phrase_treeinput(self,tr,labels=None,stopwords=[]):
         '''
         :param tr: tree object
-        :param labels: list of label to extrac
+        :param labels: list of label to extract phrase
+        :param stopword
