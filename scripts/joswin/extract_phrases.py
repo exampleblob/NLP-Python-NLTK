@@ -61,4 +61,6 @@ class PhraseRemover(object):
         '''
         :param tr: tree object
         :param labels: list of label to extract phrase
-        :param stopword
+        :param stopwords: stopwords list
+        :return:
+        
