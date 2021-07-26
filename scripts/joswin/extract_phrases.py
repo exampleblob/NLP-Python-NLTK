@@ -63,4 +63,6 @@ class PhraseRemover(object):
         :param labels: list of label to extract phrase
         :param stopwords: stopwords list
         :return:
-        
+        '''
+        if not labels:
+          
