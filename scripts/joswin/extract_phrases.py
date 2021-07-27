@@ -65,4 +65,5 @@ class PhraseRemover(object):
         :return:
         '''
         if not labels:
-            labels = ['ORGANIZATION','PERSON','LOCATION','DATE','TIME','MONEY','PERCENT','FACILITY
+            labels = ['ORGANIZATION','PERSON','LOCATION','DATE','TIME','MONEY','PERCENT','FACILITY','GPE']
+        labels.append('
