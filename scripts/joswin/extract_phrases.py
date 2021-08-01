@@ -67,4 +67,4 @@ class PhraseRemover(object):
         if not labels:
             labels = ['ORGANIZATION','PERSON','LOCATION','DATE','TIME','MONEY','PERCENT','FACILITY','GPE']
         labels.append('S')
-        return ' '.join([' '.join(tree_travel
+        return ' '.join([' '.join(tree_travel(e,stopwords)) if isinstance(e,nlt
