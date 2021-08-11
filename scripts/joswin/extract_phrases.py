@@ -70,4 +70,6 @@ class PhraseRemover(object):
         return ' '.join([' '.join(tree_travel(e,stopwords)) if isinstance(e,nltk.tree.Tree) else e[0] 
                     for e in list(tr) if not (isinstance(e,nltk.tree.Tree) and e.label() in labels)])
 
-    def remove_phrase_treelistinput(self,ltrees,lab
+    def remove_phrase_treelistinput(self,ltrees,labels=None,stopwords=[]):
+        '''
+ 
