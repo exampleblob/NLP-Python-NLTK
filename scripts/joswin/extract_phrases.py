@@ -72,4 +72,4 @@ class PhraseRemover(object):
 
     def remove_phrase_treelistinput(self,ltrees,labels=None,stopwords=[]):
         '''
- 
+        :param ltrees: list of tree objects
