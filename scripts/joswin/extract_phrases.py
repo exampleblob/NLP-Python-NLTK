@@ -77,3 +77,5 @@ class PhraseRemover(object):
         :param stopwords:
         :return:
         '''
+        if not labels:
+            labe
