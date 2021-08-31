@@ -79,4 +79,4 @@ class PhraseRemover(object):
         '''
         if not labels:
             labels = ['ORGANIZATION','PERSON','LOCATION','DATE','TIME','MONEY','PERCENT','FACILITY','GPE']
-        return [self.rem
+        return [self.remove_phrase_treeinput(tr,labels,stopwords) f
