@@ -79,4 +79,8 @@ class PhraseRemover(object):
         '''
         if not labels:
             labels = ['ORGANIZATION','PERSON','LOCATION','DATE','TIME','MONEY','PERCENT','FACILITY','GPE']
-        return [self.remove_phrase_treeinput(tr,labels,stopwords) f
+        return [self.remove_phrase_treeinput(tr,labels,stopwords) for tr in ltrees]
+
+
+
+def multiple_replace(dict
