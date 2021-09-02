@@ -83,4 +83,4 @@ class PhraseRemover(object):
 
 
 
-def multiple_replace(dict
+def multiple_replace(dict, text, word_limit = False, flags = 
