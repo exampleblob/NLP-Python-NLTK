@@ -85,4 +85,4 @@ class PhraseRemover(object):
 
 def multiple_replace(dict, text, word_limit = False, flags = 0):
     '''replaces multiple matches
-    :param dict: diction with key as th
+    :param dict: diction with key as the phrase to be replaced and value as the p
