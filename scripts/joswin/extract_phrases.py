@@ -88,4 +88,5 @@ def multiple_replace(dict, text, word_limit = False, flags = 0):
     :param dict: diction with key as the phrase to be replaced and value as the phrase by which it needs to replaced
     :param text: text input
     :param word_limit: should the phrases be contained between world limits (eg: if trying to match 'def', if True,
-                'abcdefghi' will not be matched. If 
+                'abcdefghi' will not be matched. If False, 'abcdefghi' will be matched)
+    :
