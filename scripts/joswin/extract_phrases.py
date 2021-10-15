@@ -91,4 +91,6 @@ def multiple_replace(dict, text, word_limit = False, flags = 0):
                 'abcdefghi' will not be matched. If False, 'abcdefghi' will be matched)
     :param flags: pass re.IGNORECASE etc here
     '''
-    # Create a regular expression  f
+    # Create a regular expression  from the dictionary keys
+    if word_limit:
+      
