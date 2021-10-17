@@ -93,4 +93,5 @@ def multiple_replace(dict, text, word_limit = False, flags = 0):
     '''
     # Create a regular expression  from the dictionary keys
     if word_limit:
-        reg_text = "(\\b%s\\b)" % "|".join(m
+        reg_text = "(\\b%s\\b)" % "|".join(map(re.escape, dict.keys()))
+        reg_tex
