@@ -95,4 +95,5 @@ def multiple_replace(dict, text, word_limit = False, flags = 0):
     if word_limit:
         reg_text = "(\\b%s\\b)" % "|".join(map(re.escape, dict.keys()))
         reg_text = '\\b'+reg_text+'\\b'
-        regex 
+        regex = re.compile(reg_text,flags)
+    else:
