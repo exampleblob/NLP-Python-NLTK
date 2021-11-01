@@ -99,4 +99,4 @@ def multiple_replace(dict, text, word_limit = False, flags = 0):
     else:
         regex = re.compile("(%s)" % "|".join(map(re.escape, dict.keys())),flags)
     # For each match, look-up corresponding value in dictionary
-    return rege
+    return regex.sub(lambda mo: dict[mo.string[mo.start():mo.end()]
