@@ -101,4 +101,6 @@ def multiple_replace(dict, text, word_limit = False, flags = 0):
     # For each match, look-up corresponding value in dictionary
     return regex.sub(lambda mo: dict[mo.string[mo.start():mo.end()]], text)
 
-class PhraseMerger(obj
+class PhraseMerger(object):
+    """merge phrases"""
+    def __init_
