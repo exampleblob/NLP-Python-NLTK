@@ -103,4 +103,7 @@ def multiple_replace(dict, text, word_limit = False, flags = 0):
 
 class PhraseMerger(object):
     """merge phrases"""
-    def __init_
+    def __init__(self):
+        pass
+
+    def merge_phr
