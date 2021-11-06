@@ -106,4 +106,4 @@ class PhraseMerger(object):
     def __init__(self):
         pass
 
-    def merge_phrases_textinput_matchdict(self,text,phr_match_dict,word_limit=True,flags=0
+    def merge_phrases_textinput_matchdict(self,text,phr_match_dict,word_limit=True,flags=0,join_by='_',keep_original=True)
