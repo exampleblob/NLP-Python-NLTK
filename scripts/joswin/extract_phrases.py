@@ -107,4 +107,4 @@ class PhraseMerger(object):
         pass
 
     def merge_phrases_textinput_matchdict(self,text,phr_match_dict,word_limit=True,flags=0,join_by='_',keep_original=True):
-        '''Merges the phrases in the 
+        '''Merges the phrases in the text. phrases are provided in 
