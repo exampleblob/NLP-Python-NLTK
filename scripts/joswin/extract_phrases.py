@@ -109,4 +109,5 @@ class PhraseMerger(object):
     def merge_phrases_textinput_matchdict(self,text,phr_match_dict,word_limit=True,flags=0,join_by='_',keep_original=True):
         '''Merges the phrases in the text. phrases are provided in a dict, with phr:new_phr structure
         :param text : text input
-        :param phr_match_dict : dict which gives matching text and re
+        :param phr_match_dict : dict which gives matching text and replace text
+            eg: {"not inter
