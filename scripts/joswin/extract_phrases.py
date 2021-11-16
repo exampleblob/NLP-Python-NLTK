@@ -111,4 +111,5 @@ class PhraseMerger(object):
         :param text : text input
         :param phr_match_dict : dict which gives matching text and replace text
             eg: {"not interested":"not_interested","no need":"no_need"}
-        :param word_limit: Flag. If true, the phrases must be co
+        :param word_limit: Flag. If true, the phrases must be contained within word bountaries.
+ 
