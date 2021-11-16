@@ -110,4 +110,5 @@ class PhraseMerger(object):
         '''Merges the phrases in the text. phrases are provided in a dict, with phr:new_phr structure
         :param text : text input
         :param phr_match_dict : dict which gives matching text and replace text
-            eg: {"not interested":"not_interested","no need":"no_n
+            eg: {"not interested":"not_interested","no need":"no_need"}
+        :param word_limit: Flag
