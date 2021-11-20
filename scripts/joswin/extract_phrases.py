@@ -113,4 +113,6 @@ class PhraseMerger(object):
             eg: {"not interested":"not_interested","no need":"no_need"}
         :param word_limit: Flag. If true, the phrases must be contained within word bountaries.
         :param flags: regex flag
-       
+        :join_by
+        '''        
+        if ke
