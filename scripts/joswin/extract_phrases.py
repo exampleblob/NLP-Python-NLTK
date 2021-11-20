@@ -116,4 +116,5 @@ class PhraseMerger(object):
         :join_by
         '''        
         if keep_original:
-            #replace the phrases
+            #replace the phrases with new phrases
+            new_text = m
