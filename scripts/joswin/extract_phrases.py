@@ -115,4 +115,5 @@ class PhraseMerger(object):
         :param flags: regex flag
         :join_by
         '''        
-        if ke
+        if keep_original:
+            #replace the phrases
