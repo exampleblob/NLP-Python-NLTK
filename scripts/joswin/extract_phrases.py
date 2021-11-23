@@ -117,4 +117,5 @@ class PhraseMerger(object):
         '''        
         if keep_original:
             #replace the phrases with new phrases
-            new_text = multiple_replace(phr_match_dict,text,word
+            new_text = multiple_replace(phr_match_dict,text,word_limit,flags)
+            new_text_bck =
