@@ -120,4 +120,5 @@ class PhraseMerger(object):
             new_text = multiple_replace(phr_match_dict,text,word_limit,flags)
             new_text_bck = new_text
             #find the phrases and find each word in it. add the words also to the new_text
-            for wrd in n
+            for wrd in nltk.word_tokenize(new_text_bck):
+ 
