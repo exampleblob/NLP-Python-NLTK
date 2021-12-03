@@ -121,4 +121,5 @@ class PhraseMerger(object):
             new_text_bck = new_text
             #find the phrases and find each word in it. add the words also to the new_text
             for wrd in nltk.word_tokenize(new_text_bck):
- 
+                if join_by in wrd:
+                    f
