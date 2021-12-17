@@ -123,4 +123,6 @@ class PhraseMerger(object):
             for wrd in nltk.word_tokenize(new_text_bck):
                 if join_by in wrd:
                     for wrd1 in wrd.split(join_by):
-                        new_text = new_text 
+                        new_text = new_text + ' '+wrd1
+        else:
+            new_text = multi
