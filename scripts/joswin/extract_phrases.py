@@ -125,4 +125,4 @@ class PhraseMerger(object):
                     for wrd1 in wrd.split(join_by):
                         new_text = new_text + ' '+wrd1
         else:
-            new_text = multi
+            new_text = multiple_replace(phr_match_dict,text,word_lim
