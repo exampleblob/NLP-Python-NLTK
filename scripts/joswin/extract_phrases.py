@@ -128,4 +128,4 @@ class PhraseMerger(object):
             new_text = multiple_replace(phr_match_dict,text,word_limit,flags)
         return new_text
 
-   
+    def build_phr_match_dict(self,phrases,jo
