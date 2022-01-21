@@ -131,4 +131,5 @@ class PhraseMerger(object):
     def build_phr_match_dict(self,phrases,join_by='_'):
         '''
         build phrases dict from phrases list. phrases is a list of phrases.
-        Eg; ph
+        Eg; phrases = ["ph1_wrd1 ph1_wrd2","ph2_wrd1 ph2_wrd2 ph2_wrd3"]
+            Returns {"ph1_w
