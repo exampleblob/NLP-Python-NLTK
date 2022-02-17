@@ -137,4 +137,5 @@ class PhraseMerger(object):
         phr_dict = {}
         for phr in phrases:
             new_phr = join_by.join(nltk.word_tokenize(phr))
-            phr_dict[phr] = 
+            phr_dict[phr] = new_phr
+        return phr_dict
