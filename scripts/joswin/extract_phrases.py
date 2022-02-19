@@ -139,3 +139,5 @@ class PhraseMerger(object):
             new_phr = join_by.join(nltk.word_tokenize(phr))
             phr_dict[phr] = new_phr
         return phr_dict
+
+    def merge_phrases_textinput(sel
