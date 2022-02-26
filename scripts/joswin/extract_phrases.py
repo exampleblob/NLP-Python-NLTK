@@ -140,4 +140,4 @@ class PhraseMerger(object):
             phr_dict[phr] = new_phr
         return phr_dict
 
-    def merge_phrases_textinput(self,text,phrases,join_by = '_',w
+    def merge_phrases_textinput(self,text,phrases,join_by = '_',word_limit=True,flag=0,keep_original=False):
