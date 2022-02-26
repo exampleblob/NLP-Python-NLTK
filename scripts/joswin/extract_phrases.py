@@ -141,3 +141,4 @@ class PhraseMerger(object):
         return phr_dict
 
     def merge_phrases_textinput(self,text,phrases,join_by = '_',word_limit=True,flag=0,keep_original=False):
+        '''Merge phrases in the text input. This fun
