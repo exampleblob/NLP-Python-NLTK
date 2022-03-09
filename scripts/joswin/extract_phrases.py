@@ -142,4 +142,4 @@ class PhraseMerger(object):
 
     def merge_phrases_textinput(self,text,phrases,join_by = '_',word_limit=True,flag=0,keep_original=False):
         '''Merge phrases in the text input. This function is useful if the processing is needed only for one text input.
-            If the text are present inside a list or 
+            If the text are present inside a list or other iterable, call the merge_phrases_li
