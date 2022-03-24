@@ -145,4 +145,5 @@ class PhraseMerger(object):
             If the text are present inside a list or other iterable, call the merge_phrases_listinput function as it is
             more efficient.
         :param text:
-        :param phrases : list of phrases. eg: ['not interested
+        :param phrases : list of phrases. eg: ['not interested','no need',..]
+        :param join_by : how to joi
