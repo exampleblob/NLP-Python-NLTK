@@ -146,4 +146,6 @@ class PhraseMerger(object):
             more efficient.
         :param text:
         :param phrases : list of phrases. eg: ['not interested','no need',..]
-        :param join_by : how to joi
+        :param join_by : how to join phrases
+        '''
+        
