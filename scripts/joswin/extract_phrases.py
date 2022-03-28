@@ -148,4 +148,4 @@ class PhraseMerger(object):
         :param phrases : list of phrases. eg: ['not interested','no need',..]
         :param join_by : how to join phrases
         '''
-        return self.merge_phrases_textinput_matchdic
+        return self.merge_phrases_textinput_matchdict(text,self.build_phr_match_dict(phrases,join_by)
