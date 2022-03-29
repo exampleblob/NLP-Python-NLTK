@@ -150,4 +150,4 @@ class PhraseMerger(object):
         '''
         return self.merge_phrases_textinput_matchdict(text,self.build_phr_match_dict(phrases,join_by),word_limit,flag,join_by,keep_original)
 
-    d
+    def merge_phrases_listinput(self,text
