@@ -152,4 +152,5 @@ class PhraseMerger(object):
 
     def merge_phrases_listinput(self,text_list,phrases,join_by='_',word_limit=True,flags=0,keep_original=False):
         '''Merge the phrases in the texts in the input list.
-        :para
+        :param text_list: input text list
+       
