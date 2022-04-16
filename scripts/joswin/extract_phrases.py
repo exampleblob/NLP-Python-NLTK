@@ -154,4 +154,5 @@ class PhraseMerger(object):
         '''Merge the phrases in the texts in the input list.
         :param text_list: input text list
         :param phrases: phrases to be merged
-        :param join_by: join the phrases using
+        :param join_by: join the phrases using this field
+        :param word_limit: should the
