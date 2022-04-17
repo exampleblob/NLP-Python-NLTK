@@ -155,4 +155,4 @@ class PhraseMerger(object):
         :param text_list: input text list
         :param phrases: phrases to be merged
         :param join_by: join the phrases using this field
-        :param word_limit: should the
+        :param word_limit: should the phrases be contained between word li
