@@ -157,4 +157,5 @@ class PhraseMerger(object):
         :param join_by: join the phrases using this field
         :param word_limit: should the phrases be contained between word limits
         :param flags: flag for regex matching
-        :param keep_original:  If True, will k
+        :param keep_original:  If True, will keep the original words in the phrases
+     
