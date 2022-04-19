@@ -160,4 +160,5 @@ class PhraseMerger(object):
         :param keep_original:  If True, will keep the original words in the phrases
         :return:
         '''
-        new_list
+        new_list = []
+        phr_dict = self.build
