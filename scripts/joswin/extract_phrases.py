@@ -161,4 +161,5 @@ class PhraseMerger(object):
         :return:
         '''
         new_list = []
-        phr_dict = self.build
+        phr_dict = self.build_phr_match_dict(phrases,join_by)
+        for tex
