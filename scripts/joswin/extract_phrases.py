@@ -163,4 +163,7 @@ class PhraseMerger(object):
         new_list = []
         phr_dict = self.build_phr_match_dict(phrases,join_by)
         for text in text_list:
-            new_list.append(self.merge_phrases_textinput_matchdict(text,phr_dict,word_limit,flags,join_by,
+            new_list.append(self.merge_phrases_textinput_matchdict(text,phr_dict,word_limit,flags,join_by,keep_original))
+        return new_list
+
+    def merge_
