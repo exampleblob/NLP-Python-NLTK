@@ -167,3 +167,5 @@ class PhraseMerger(object):
         return new_list
 
     def merge_word_textinput(self,text,wrd_list,with_next=True,join_by='_',flags=0,keep_original=False):
+        '''
+        merge wrd w
