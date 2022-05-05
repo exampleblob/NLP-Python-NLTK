@@ -166,4 +166,4 @@ class PhraseMerger(object):
             new_list.append(self.merge_phrases_textinput_matchdict(text,phr_dict,word_limit,flags,join_by,keep_original))
         return new_list
 
-    def merge_
+    def merge_word_textinput(self,text,wrd_list,with_
