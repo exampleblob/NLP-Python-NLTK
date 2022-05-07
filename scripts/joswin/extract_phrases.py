@@ -168,4 +168,4 @@ class PhraseMerger(object):
 
     def merge_word_textinput(self,text,wrd_list,with_next=True,join_by='_',flags=0,keep_original=False):
         '''
-        merge wrd w
+        merge wrd with next/previous word. Eg: 'not' with all n
