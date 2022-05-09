@@ -171,4 +171,5 @@ class PhraseMerger(object):
         merge wrd with next/previous word. Eg: 'not' with all next words. The wrd_list is a list of such words. For all
         the words in wrd_list, this action will be performed.
         :param text: input text
-        :param
+        :param wrd_list: list of words to be merged
+        :pa
