@@ -173,4 +173,5 @@ class PhraseMerger(object):
         :param text: input text
         :param wrd_list: list of words to be merged
         :param with_next : Flag to join with next word or previous word. If True, will join with the next word.
-      
+        :param join_by:
+        :param flags: re flag
