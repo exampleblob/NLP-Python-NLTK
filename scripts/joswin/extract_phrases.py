@@ -178,4 +178,5 @@ class PhraseMerger(object):
         :param keep_original: If True, will keep the original words in the phrases
         '''
         if with_next:
-     
+            for wrd in wrd_list:
+                tex
