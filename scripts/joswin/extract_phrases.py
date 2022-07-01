@@ -181,4 +181,5 @@ class PhraseMerger(object):
             for wrd in wrd_list:
                 text = re.sub("\\b"+wrd+" ",wrd+join_by,text,flags=flags)
         else:
-            for 
+            for wrd in wrd_list:
+                text = re.sub(
