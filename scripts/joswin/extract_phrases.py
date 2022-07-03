@@ -183,4 +183,5 @@ class PhraseMerger(object):
         else:
             for wrd in wrd_list:
                 text = re.sub(" "+wrd+"\\b",join_by+wrd,text,flags=flags)
-      
+        if keep_original:
+            text_bck =
