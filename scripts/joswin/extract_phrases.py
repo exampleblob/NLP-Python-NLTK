@@ -186,4 +186,5 @@ class PhraseMerger(object):
         if keep_original:
             text_bck = text
             for wrd in nltk.word_tokenize(text_bck):
-                if join_b
+                if join_by in wrd:
+                    for wrd1 in wrd.spli
