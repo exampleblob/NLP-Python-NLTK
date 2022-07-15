@@ -185,4 +185,5 @@ class PhraseMerger(object):
                 text = re.sub(" "+wrd+"\\b",join_by+wrd,text,flags=flags)
         if keep_original:
             text_bck = text
-            for wrd in nltk.word
+            for wrd in nltk.word_tokenize(text_bck):
+                if join_b
