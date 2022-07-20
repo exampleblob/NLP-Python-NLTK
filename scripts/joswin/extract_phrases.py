@@ -188,4 +188,5 @@ class PhraseMerger(object):
             for wrd in nltk.word_tokenize(text_bck):
                 if join_by in wrd:
                     for wrd1 in wrd.split(join_by):
-                        t
+                        text = text + ' '+wrd1
+        ret
