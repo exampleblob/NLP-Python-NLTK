@@ -189,4 +189,6 @@ class PhraseMerger(object):
                 if join_by in wrd:
                     for wrd1 in wrd.split(join_by):
                         text = text + ' '+wrd1
-        ret
+        return text
+
+    def merge_word_listinput(self,
