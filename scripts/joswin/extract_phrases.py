@@ -191,4 +191,5 @@ class PhraseMerger(object):
                         text = text + ' '+wrd1
         return text
 
-    def merge_word_listinput(self,text_list,wrd_list,with_next=True,join_b
+    def merge_word_listinput(self,text_list,wrd_list,with_next=True,join_by='_',flags=0,keep_original=False):
+ 
