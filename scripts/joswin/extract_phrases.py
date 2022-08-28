@@ -193,4 +193,4 @@ class PhraseMerger(object):
 
     def merge_word_listinput(self,text_list,wrd_list,with_next=True,join_by='_',flags=0,keep_original=False):
         '''
-        merge wrd with next/previous word for each sentence in the l
+        merge wrd with next/previous word for each sentence in the list. Eg: not with all next words. wrap
