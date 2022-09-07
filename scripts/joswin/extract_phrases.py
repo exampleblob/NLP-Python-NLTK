@@ -197,4 +197,5 @@ class PhraseMerger(object):
         for merge_word_textinput for list inputs(iterable object containing texts). The words to be merged can be given
         as a list.
         :param text_list: input text list
-        :param wrd_list:Li
+        :param wrd_list:List of words to be merged
+        :param wi
