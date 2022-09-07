@@ -198,4 +198,4 @@ class PhraseMerger(object):
         as a list.
         :param text_list: input text list
         :param wrd_list:List of words to be merged
-        :param wi
+        :param with_next:Flag to join with next word o
