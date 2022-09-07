@@ -196,4 +196,5 @@ class PhraseMerger(object):
         merge wrd with next/previous word for each sentence in the list. Eg: not with all next words. wrapper function
         for merge_word_textinput for list inputs(iterable object containing texts). The words to be merged can be given
         as a list.
-        :param text_list: input te
+        :param text_list: input text list
+        :param wrd_list:Li
