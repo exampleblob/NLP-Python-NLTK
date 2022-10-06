@@ -201,4 +201,5 @@ class PhraseMerger(object):
         :param with_next:Flag to join with next word or previous word. If True, will join with the next word.
         :param join_by:
         :param flags: re flags
-        :param keep_original
+        :param keep_original : If True, will keep original words in the phrases
+    
