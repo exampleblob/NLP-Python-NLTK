@@ -202,4 +202,6 @@ class PhraseMerger(object):
         :param join_by:
         :param flags: re flags
         :param keep_original : If True, will keep original words in the phrases
-    
+        '''
+        new_list = []
+        for te
