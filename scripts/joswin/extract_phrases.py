@@ -204,4 +204,5 @@ class PhraseMerger(object):
         :param keep_original : If True, will keep original words in the phrases
         '''
         new_list = []
-        for te
+        for text in text_list:
+           
