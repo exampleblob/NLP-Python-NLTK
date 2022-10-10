@@ -205,4 +205,4 @@ class PhraseMerger(object):
         '''
         new_list = []
         for text in text_list:
-            new_list.append(self.merge_word_tex
+            new_list.append(self.merge_word_textinput(text,wrd_list,with_next,join_by,flag
