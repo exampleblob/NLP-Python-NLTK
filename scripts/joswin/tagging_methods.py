@@ -1,1 +1,3 @@
-__author__ = 'joswin
+__author__ = 'joswin'
+#!/usr/bin/python
+# -*- coding: utf-8 
