@@ -4,4 +4,6 @@ __author__ = 'joswin'
 
 import nltk
 
-def get_po
+def get_postag_listinput(text_list):
+        '''
+        This
