@@ -6,4 +6,4 @@ import nltk
 
 def get_postag_listinput(text_list):
         '''
-        This
+        This method tries to tag a list of sentences.
