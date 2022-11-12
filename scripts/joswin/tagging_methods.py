@@ -10,4 +10,5 @@ def get_postag_listinput(text_list):
         combines all the sentences, and tag them together, then split the sentences back.
         text_list is a list of sentences
         '''
-        list_split_code
+        list_split_code = ' spl_cd_X3ffty. '
+        pos_list_
