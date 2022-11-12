@@ -11,4 +11,5 @@ def get_postag_listinput(text_list):
         text_list is a list of sentences
         '''
         list_split_code = ' spl_cd_X3ffty. '
-        pos_list_
+        pos_list_split = 'spl_cd_X3ffty'
+        tmp = list
