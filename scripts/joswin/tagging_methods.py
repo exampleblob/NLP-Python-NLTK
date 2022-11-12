@@ -12,4 +12,5 @@ def get_postag_listinput(text_list):
         '''
         list_split_code = ' spl_cd_X3ffty. '
         pos_list_split = 'spl_cd_X3ffty'
-        tmp = list
+        tmp = list_split_code.join(text_list)
+        doc_tags 
