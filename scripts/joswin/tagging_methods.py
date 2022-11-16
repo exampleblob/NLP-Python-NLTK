@@ -14,3 +14,5 @@ def get_postag_listinput(text_list):
         pos_list_split = 'spl_cd_X3ffty'
         tmp = list_split_code.join(text_list)
         doc_tags = nltk.pos_tag(nltk.word_tokenize(tmp))
+        out_list = []
+        row_list =
