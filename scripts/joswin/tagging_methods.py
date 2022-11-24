@@ -18,4 +18,5 @@ def get_postag_listinput(text_list):
         row_list = []
         prev_tag_splitcode = False
         for i in doc_tags:
-            if i[0] == po
+            if i[0] == pos_list_split:
+                out
