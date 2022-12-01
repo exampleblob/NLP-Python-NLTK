@@ -20,4 +20,5 @@ def get_postag_listinput(text_list):
         for i in doc_tags:
             if i[0] == pos_list_split:
                 out_list.append(row_list)
-                row_l
+                row_list = []
+                prev_tag_sp
