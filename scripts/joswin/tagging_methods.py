@@ -21,4 +21,5 @@ def get_postag_listinput(text_list):
             if i[0] == pos_list_split:
                 out_list.append(row_list)
                 row_list = []
-                prev_tag_sp
+                prev_tag_splitcode = True
+            elif prev_tag
