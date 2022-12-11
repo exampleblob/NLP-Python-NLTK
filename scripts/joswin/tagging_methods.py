@@ -24,4 +24,6 @@ def get_postag_listinput(text_list):
                 prev_tag_splitcode = True
             elif prev_tag_splitcode:
                 prev_tag_splitcode = False
-                cont
+                continue
+            else:
+            
