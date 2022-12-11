@@ -26,4 +26,5 @@ def get_postag_listinput(text_list):
                 prev_tag_splitcode = False
                 continue
             else:
-            
+                row_list.append(i)
+        out_list.append(ro
