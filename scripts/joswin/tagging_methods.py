@@ -27,4 +27,5 @@ def get_postag_listinput(text_list):
                 continue
             else:
                 row_list.append(i)
-        out_list.append(ro
+        out_list.append(row_list)
+        out_list = out_l
