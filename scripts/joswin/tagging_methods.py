@@ -28,4 +28,5 @@ def get_postag_listinput(text_list):
             else:
                 row_list.append(i)
         out_list.append(row_list)
-        out_list = out_l
+        out_list = out_list[:len(text_list)]
+        return out_l
