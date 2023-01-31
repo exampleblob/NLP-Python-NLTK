@@ -74,3 +74,39 @@ def tag(text):
     found = reg5.findall(text)
     for timex in found:
         timex_found.append(timex)
+
+    # Tag only temporal expressions which haven't been tagged.
+    for timex in timex_found:
+        text = re.sub(timex + '(?!</TIMEX2>)', '<TIMEX2>' + timex + '</TIMEX2>', text)
+
+    return text
+
+# Hash function for week days to simplify the grounding task.
+# [Mon..Sun] -> [0..6]
+hashweekdays = {
+    'Monday': 0,
+    'Tuesday': 1,
+    'Wednesday': 2,
+    'Thursday': 3,
+    'Friday': 4,
+    'Saturday': 5,
+    'Sunday': 6}
+
+# Hash function for months to simplify the grounding task.
+# [Jan..Dec] -> [1..12]
+hashmonths = {
+    'January': 1,
+    'February': 2,
+    'March': 3,
+    'April': 4,
+    'May': 5,
+    'June': 6,
+    'July': 7,
+    'August': 8,
+    'September': 9,
+    'October': 10,
+    'November': 11,
+    'December': 12}
+
+# Hash number in words into the corresponding integer value
+def hashnum(number):
