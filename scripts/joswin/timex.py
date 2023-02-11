@@ -110,3 +110,45 @@ hashmonths = {
 
 # Hash number in words into the corresponding integer value
 def hashnum(number):
+    if re.match(r'one|^a\b', number, re.IGNORECASE):
+        return 1
+    if re.match(r'two', number, re.IGNORECASE):
+        return 2
+    if re.match(r'three', number, re.IGNORECASE):
+        return 3
+    if re.match(r'four', number, re.IGNORECASE):
+        return 4
+    if re.match(r'five', number, re.IGNORECASE):
+        return 5
+    if re.match(r'six', number, re.IGNORECASE):
+        return 6
+    if re.match(r'seven', number, re.IGNORECASE):
+        return 7
+    if re.match(r'eight', number, re.IGNORECASE):
+        return 8
+    if re.match(r'nine', number, re.IGNORECASE):
+        return 9
+    if re.match(r'ten', number, re.IGNORECASE):
+        return 10
+    if re.match(r'eleven', number, re.IGNORECASE):
+        return 11
+    if re.match(r'twelve', number, re.IGNORECASE):
+        return 12
+    if re.match(r'thirteen', number, re.IGNORECASE):
+        return 13
+    if re.match(r'fourteen', number, re.IGNORECASE):
+        return 14
+    if re.match(r'fifteen', number, re.IGNORECASE):
+        return 15
+    if re.match(r'sixteen', number, re.IGNORECASE):
+        return 16
+    if re.match(r'seventeen', number, re.IGNORECASE):
+        return 17
+    if re.match(r'eighteen', number, re.IGNORECASE):
+        return 18
+    if re.match(r'nineteen', number, re.IGNORECASE):
+        return 19
+    if re.match(r'twenty', number, re.IGNORECASE):
+        return 20
+    if re.match(r'thirty', number, re.IGNORECASE):
+        return 30
