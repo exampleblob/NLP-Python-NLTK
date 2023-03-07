@@ -152,3 +152,43 @@ def hashnum(number):
         return 20
     if re.match(r'thirty', number, re.IGNORECASE):
         return 30
+    if re.match(r'forty', number, re.IGNORECASE):
+        return 40
+    if re.match(r'fifty', number, re.IGNORECASE):
+        return 50
+    if re.match(r'sixty', number, re.IGNORECASE):
+        return 60
+    if re.match(r'seventy', number, re.IGNORECASE):
+        return 70
+    if re.match(r'eighty', number, re.IGNORECASE):
+        return 80
+    if re.match(r'ninety', number, re.IGNORECASE):
+        return 90
+    if re.match(r'hundred', number, re.IGNORECASE):
+        return 100
+    if re.match(r'thousand', number, re.IGNORECASE):
+      return 1000
+
+# Given a timex_tagged_text and a Date object set to base_date,
+# returns timex_grounded_text
+def ground(tagged_text, base_date):
+
+    # Find all identified timex and put them into a list
+    timex_regex = re.compile(r'<TIMEX2>.*?</TIMEX2>', re.DOTALL)
+    timex_found = timex_regex.findall(tagged_text)
+    timex_found = map(lambda timex:re.sub(r'</?TIMEX2.*?>', '', timex), \
+                timex_found)
+
+    # Calculate the new date accordingly
+    for timex in timex_found:
+        timex_val = 'UNKNOWN' # Default value
+
+        timex_ori = timex   # Backup original timex for later substitution
+
+        # If numbers are given in words, hash them into corresponding numbers.
+        # eg. twenty five days ago --> 25 days ago
+        if re.search(numbers, timex, re.IGNORECASE):
+            split_timex = re.split(r'\s(?=days?|months?|years?|weeks?)', \
+                                                              timex, re.IGNORECASE)
+            value = split_timex[0]
+            unit = split_timex[1]
