@@ -231,3 +231,38 @@ def ground(tagged_text, base_date):
             day = hashweekdays[timex.split()[1]]
             timex_val = str(base_date + RelativeDateTime(weeks=+1, \
                               weekday=(day,0)))
+
+        # Last, this, next week.
+        elif re.match(r'last week', timex, re.IGNORECASE):
+            year = (base_date + RelativeDateTime(weeks=-1)).year
+
+            # iso_week returns a triple (year, week, day) hence, retrieve
+            # only week value.
+            week = (base_date + RelativeDateTime(weeks=-1)).iso_week[1]
+            timex_val = str(year) + 'W' + str(week)
+        elif re.match(r'this week', timex, re.IGNORECASE):
+            year = (base_date + RelativeDateTime(weeks=0)).year
+            week = (base_date + RelativeDateTime(weeks=0)).iso_week[1]
+            timex_val = str(year) + 'W' + str(week)
+        elif re.match(r'next week', timex, re.IGNORECASE):
+            year = (base_date + RelativeDateTime(weeks=+1)).year
+            week = (base_date + RelativeDateTime(weeks=+1)).iso_week[1]
+            timex_val = str(year) + 'W' + str(week)
+
+        # Month in the previous year.
+        elif re.match(r'last ' + month, timex, re.IGNORECASE):
+            month = hashmonths[timex.split()[1]]
+            timex_val = str(base_date.year - 1) + '-' + str(month)
+
+        # Month in the current year.
+        elif re.match(r'this ' + month, timex, re.IGNORECASE):
+            month = hashmonths[timex.split()[1]]
+            timex_val = str(base_date.year) + '-' + str(month)
+
+        # Month in the following year.
+        elif re.match(r'next ' + month, timex, re.IGNORECASE):
+            month = hashmonths[timex.split()[1]]
+            timex_val = str(base_date.year + 1) + '-' + str(month)
+        elif re.match(r'last month', timex, re.IGNORECASE):
+
+            # Handles the year boundary.
