@@ -192,3 +192,42 @@ def ground(tagged_text, base_date):
                                                               timex, re.IGNORECASE)
             value = split_timex[0]
             unit = split_timex[1]
+            num_list = map(lambda s:hashnum(s),re.findall(numbers + '+', \
+                                          value, re.IGNORECASE))
+            timex = `sum(num_list)` + ' ' + unit
+
+        # If timex matches ISO format, remove 'time' and reorder 'date'
+        if re.match(r'\d+[/-]\d+[/-]\d+ \d+:\d+:\d+\.\d+', timex):
+            dmy = re.split(r'\s', timex)[0]
+            dmy = re.split(r'/|-', dmy)
+            timex_val = str(dmy[2]) + '-' + str(dmy[1]) + '-' + str(dmy[0])
+
+        # Specific dates
+        elif re.match(r'\d{4}', timex):
+            timex_val = str(timex)
+
+        # Relative dates
+        elif re.match(r'tonight|tonite|today', timex, re.IGNORECASE):
+            timex_val = str(base_date)
+        elif re.match(r'yesterday', timex, re.IGNORECASE):
+            timex_val = str(base_date + RelativeDateTime(days=-1))
+        elif re.match(r'tomorrow', timex, re.IGNORECASE):
+            timex_val = str(base_date + RelativeDateTime(days=+1))
+
+        # Weekday in the previous week.
+        elif re.match(r'last ' + week_day, timex, re.IGNORECASE):
+            day = hashweekdays[timex.split()[1]]
+            timex_val = str(base_date + RelativeDateTime(weeks=-1, \
+                            weekday=(day,0)))
+
+        # Weekday in the current week.
+        elif re.match(r'this ' + week_day, timex, re.IGNORECASE):
+            day = hashweekdays[timex.split()[1]]
+            timex_val = str(base_date + RelativeDateTime(weeks=0, \
+                            weekday=(day,0)))
+
+        # Weekday in the following week.
+        elif re.match(r'next ' + week_day, timex, re.IGNORECASE):
+            day = hashweekdays[timex.split()[1]]
+            timex_val = str(base_date + RelativeDateTime(weeks=+1, \
+                              weekday=(day,0)))
