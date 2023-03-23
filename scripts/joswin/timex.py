@@ -354,3 +354,21 @@ def ground(tagged_text, base_date):
 # def demo():
 #     import nltk
 #     text = nltk.corpus.abc.raw('rural.txt')[:10000]
+#     print tag(text)
+#
+# if __name__ == '__main__':
+#     demo()
+
+def check_if_date_present(text):
+    ''' Check if a date/schedule is present in the text.
+    :param text:
+    :return: True if date present, else False
+    '''
+    timex_tag = tag(text)
+    if re.search('<TIMEX2>',timex_tag):
+        return True
+    matches = datefinder.find_dates(text)
+    for match in matches:
+        if match:
+            return True
+    return False
