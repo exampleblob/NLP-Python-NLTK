@@ -266,3 +266,41 @@ def ground(tagged_text, base_date):
         elif re.match(r'last month', timex, re.IGNORECASE):
 
             # Handles the year boundary.
+            if base_date.month == 1:
+                timex_val = str(base_date.year - 1) + '-' + '12'
+            else:
+                timex_val = str(base_date.year) + '-' + str(base_date.month - 1)
+        elif re.match(r'this month', timex, re.IGNORECASE):
+                timex_val = str(base_date.year) + '-' + str(base_date.month)
+        elif re.match(r'next month', timex, re.IGNORECASE):
+
+            # Handles the year boundary.
+            if base_date.month == 12:
+                timex_val = str(base_date.year + 1) + '-' + '1'
+            else:
+                timex_val = str(base_date.year) + '-' + str(base_date.month + 1)
+        elif re.match(r'last year', timex, re.IGNORECASE):
+            timex_val = str(base_date.year - 1)
+        elif re.match(r'this year', timex, re.IGNORECASE):
+            timex_val = str(base_date.year)
+        elif re.match(r'next year', timex, re.IGNORECASE):
+            timex_val = str(base_date.year + 1)
+        elif re.match(r'\d+ days? (ago|earlier|before)', timex, re.IGNORECASE):
+
+            # Calculate the offset by taking '\d+' part from the timex.
+            offset = int(re.split(r'\s', timex)[0])
+            timex_val = str(base_date + RelativeDateTime(days=-offset))
+        elif re.match(r'\d+ days? (later|after)', timex, re.IGNORECASE):
+            offset = int(re.split(r'\s', timex)[0])
+            timex_val = str(base_date + RelativeDateTime(days=+offset))
+        elif re.match(r'\d+ weeks? (ago|earlier|before)', timex, re.IGNORECASE):
+            offset = int(re.split(r'\s', timex)[0])
+            year = (base_date + RelativeDateTime(weeks=-offset)).year
+            week = (base_date + \
+                            RelativeDateTime(weeks=-offset)).iso_week[1]
+            timex_val = str(year) + 'W' + str(week)
+        elif re.match(r'\d+ weeks? (later|after)', timex, re.IGNORECASE):
+            offset = int(re.split(r'\s', timex)[0])
+            year = (base_date + RelativeDateTime(weeks=+offset)).year
+            week = (base_date + RelativeDateTime(weeks=+offset)).iso_week[1]
+            timex_val = str(year) + 'W' + str(week)
