@@ -304,3 +304,53 @@ def ground(tagged_text, base_date):
             year = (base_date + RelativeDateTime(weeks=+offset)).year
             week = (base_date + RelativeDateTime(weeks=+offset)).iso_week[1]
             timex_val = str(year) + 'W' + str(week)
+        elif re.match(r'\d+ months? (ago|earlier|before)', timex, re.IGNORECASE):
+            extra = 0
+            offset = int(re.split(r'\s', timex)[0])
+
+            # Checks if subtracting the remainder of (offset / 12) to the base month
+            # crosses the year boundary.
+            if (base_date.month - offset % 12) < 1:
+                extra = 1
+
+            # Calculate new values for the year and the month.
+            year = str(base_date.year - offset // 12 - extra)
+            month = str((base_date.month - offset % 12) % 12)
+
+            # Fix for the special case.
+            if month == '0':
+                month = '12'
+            timex_val = year + '-' + month
+        elif re.match(r'\d+ months? (later|after)', timex, re.IGNORECASE):
+            extra = 0
+            offset = int(re.split(r'\s', timex)[0])
+            if (base_date.month + offset % 12) > 12:
+                extra = 1
+            year = str(base_date.year + offset // 12 + extra)
+            month = str((base_date.month + offset % 12) % 12)
+            if month == '0':
+                month = '12'
+            timex_val = year + '-' + month
+        elif re.match(r'\d+ years? (ago|earlier|before)', timex, re.IGNORECASE):
+            offset = int(re.split(r'\s', timex)[0])
+            timex_val = str(base_date.year - offset)
+        elif re.match(r'\d+ years? (later|after)', timex, re.IGNORECASE):
+            offset = int(re.split(r'\s', timex)[0])
+            timex_val = str(base_date.year + offset)
+
+        # Remove 'time' from timex_val.
+        # For example, If timex_val = 2000-02-20 12:23:34.45, then
+        # timex_val = 2000-02-20
+        timex_val = re.sub(r'\s.*', '', timex_val)
+
+        # Substitute tag+timex in the text with grounded tag+timex.
+        tagged_text = re.sub('<TIMEX2>' + timex_ori + '</TIMEX2>', '<TIMEX2 val=\"' \
+            + timex_val + '\">' + timex_ori + '</TIMEX2>', tagged_text)
+
+    return tagged_text
+
+####
+#
+# def demo():
+#     import nltk
+#     text = nltk.corpus.abc.raw('rural.txt')[:10000]
