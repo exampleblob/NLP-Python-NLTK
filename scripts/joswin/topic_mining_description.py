@@ -8,4 +8,5 @@ tmp = pd.read_sql('linkedin_company_base_settu_sir',engine)
 text_list = list(tmp['description'])
 del tmp
 
-from text_processing import word_transformatio
+from text_processing import word_transformations
+tk = word_transformations.Tokeni
