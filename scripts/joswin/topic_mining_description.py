@@ -8,4 +8,4 @@ tmp = pd.read_sql('linkedin_company_base_settu_sir',engine)
 text_list = list(tmp['description'])
 del tmp
 
-from
+from text_processing import word_transformatio
