@@ -9,4 +9,6 @@ text_list = list(tmp['description'])
 del tmp
 
 from text_processing import word_transformations
-tk = word_transformations.Tokeni
+tk = word_transformations.Tokenizer()
+
+text_list_lemma = tk.word
