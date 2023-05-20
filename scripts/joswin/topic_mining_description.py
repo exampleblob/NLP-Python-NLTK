@@ -12,3 +12,6 @@ from text_processing import word_transformations
 tk = word_transformations.Tokenizer()
 
 text_list_lemma = tk.wordnet_lemma_listinput(text_list) # sometimes
+
+from text_processing import extract_phrases
+phr 
