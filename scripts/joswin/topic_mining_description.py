@@ -17,4 +17,4 @@ from text_processing import extract_phrases
 phr = extract_phrases.PhraseExtractor()
 
 grammar = r"""
-   
+    NP: {<RB.*>*<DT|JJ|NN.*>+}      
