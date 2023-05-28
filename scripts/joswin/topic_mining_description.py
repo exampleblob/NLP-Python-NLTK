@@ -18,4 +18,4 @@ phr = extract_phrases.PhraseExtractor()
 
 grammar = r"""
     NP: {<RB.*>*<DT|JJ|NN.*>+}          # Chunk sequences of DT, JJ, NN
-    PP: {<IN>
+    PP: {<IN><NP>}               # Chunk prepositions foll
