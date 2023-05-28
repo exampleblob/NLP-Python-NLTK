@@ -17,4 +17,5 @@ from text_processing import extract_phrases
 phr = extract_phrases.PhraseExtractor()
 
 grammar = r"""
-    NP: {<RB.*>*<DT|JJ|NN.*>+}      
+    NP: {<RB.*>*<DT|JJ|NN.*>+}          # Chunk sequences of DT, JJ, NN
+    PP: {<IN>
