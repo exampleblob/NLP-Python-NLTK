@@ -23,4 +23,5 @@ grammar = r"""
     CLAUSE: {<NP><VP>}           # Chunk NP, VP
     """
 from text_processing import chunking
-c
+ch = chunking.Chunker()
+chunk_list = 
