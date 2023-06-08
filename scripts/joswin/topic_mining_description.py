@@ -21,4 +21,6 @@ grammar = r"""
     PP: {<IN><NP>}               # Chunk prepositions followed by NP
     VP: {<RB.*>*<VB.*><NP|PP>+} # Chunk verbs and their arguments
     CLAUSE: {<NP><VP>}           # Chunk NP, VP
-    
+    """
+from text_processing import chunking
+c
