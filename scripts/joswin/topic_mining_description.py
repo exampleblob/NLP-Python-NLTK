@@ -24,4 +24,6 @@ grammar = r"""
     """
 from text_processing import chunking
 ch = chunking.Chunker()
-chunk_list = 
+chunk_list = ch.ne_chunk_listinput(text_list)
+
+from text
