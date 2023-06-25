@@ -26,4 +26,5 @@ from text_processing import chunking
 ch = chunking.Chunker()
 chunk_list = ch.ne_chunk_listinput(text_list)
 
-from text
+from text_processing import grammar
+gm = gramm
