@@ -27,4 +27,5 @@ ch = chunking.Chunker()
 chunk_list = ch.ne_chunk_listinput(text_list)
 
 from text_processing import grammar
-gm = gramm
+gm = grammar.Grammar()
+grammar_list = gm.pa
