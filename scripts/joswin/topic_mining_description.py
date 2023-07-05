@@ -30,4 +30,5 @@ from text_processing import grammar
 gm = grammar.Grammar()
 grammar_list = gm.parse_regex_grammar_listinput(chunk_list)
 
-from text_processing import extra
+from text_processing import extract_phrases
+pe = extract_phrases.PhraseExtrac
