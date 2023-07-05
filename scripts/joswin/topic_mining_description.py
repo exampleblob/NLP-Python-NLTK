@@ -32,4 +32,4 @@ grammar_list = gm.parse_regex_grammar_listinput(chunk_list)
 
 from text_processing import extract_phrases
 pe = extract_phrases.PhraseExtractor()
-phr_list = pe.extract_phrase_treelist
+phr_list = pe.extract_phrase_treelistinput(grammar_list,['NP','PP','VP','CLAUSE'])
