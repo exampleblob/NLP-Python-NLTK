@@ -37,4 +37,5 @@ phr_list = pe.extract_phrase_treelistinput(grammar_list,['NP','PP','VP','CLAUSE'
 phr_list_all = [j for i in phr_list for j in i]
 phr_list_all = list(set(phr_list_all))
 
-pm = e
+pm = extract_phrases.PhraseMerger()
+
