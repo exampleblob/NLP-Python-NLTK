@@ -34,4 +34,5 @@ from text_processing import extract_phrases
 pe = extract_phrases.PhraseExtractor()
 phr_list = pe.extract_phrase_treelistinput(grammar_list,['NP','PP','VP','CLAUSE'])
 
-phr_list_all = [j for i in phr_list for 
+phr_list_all = [j for i in phr_list for j in i]
+phr_list_all = list(se
