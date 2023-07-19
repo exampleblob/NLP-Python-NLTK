@@ -2,4 +2,4 @@ NLP-PYTHON-NLTK
 
 -----------
 
-This
+This repository offers an array of examples a
