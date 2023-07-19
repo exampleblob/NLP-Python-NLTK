@@ -39,4 +39,4 @@ phr_list_all = list(set(phr_list_all))
 
 pm = extract_phrases.PhraseMerger()
 
-text_phrases = pm.merge_phrases_listinput(text_list,phr_list_all,keep_ori
+text_phrases = pm.merge_phrases_listinput(text_list,phr_list_all,keep_original=True)
