@@ -6,4 +6,4 @@ This repository offers an array of examples and starting points for working with
 
 SETUP
 -----------------------
-Install necessary librarie
+Install necessary libraries by typing the following com
