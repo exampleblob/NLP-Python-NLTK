@@ -6,4 +6,6 @@ This repository offers an array of examples and starting points for working with
 
 SETUP
 -----------------------
-Install necessary libraries by typing the following com
+Install necessary libraries by typing the following commands in your console:
+<pre> python </pre>
+<pre> imp
