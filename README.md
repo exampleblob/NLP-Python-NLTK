@@ -8,4 +8,5 @@ SETUP
 -----------------------
 Install necessary libraries by typing the following commands in your console:
 <pre> python </pre>
-<pre> imp
+<pre> import nltk </pre>
+<pre> nltk.download
