@@ -12,4 +12,5 @@ Install necessary libraries by typing the following commands in your console:
 <pre> nltk.download('all') </pre>
 
 GETTING STARTED
---
+-------------------
+To clone and run the reposit
