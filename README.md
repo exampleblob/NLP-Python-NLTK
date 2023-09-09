@@ -9,4 +9,7 @@ SETUP
 Install necessary libraries by typing the following commands in your console:
 <pre> python </pre>
 <pre> import nltk </pre>
-<pre> nltk.download
+<pre> nltk.download('all') </pre>
+
+GETTING STARTED
+--
