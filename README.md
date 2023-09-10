@@ -15,4 +15,4 @@ GETTING STARTED
 -------------------
 To clone and run the repository scripts, enter these commands in your terminal:
 <pre> git clone git@github.com:exampleblob/NLP-Python-NLTK.git </pre>
-<p
+<pre> cd NLP-Python-NLTK/scripts </pre>
