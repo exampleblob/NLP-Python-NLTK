@@ -13,4 +13,5 @@ Install necessary libraries by typing the following commands in your console:
 
 GETTING STARTED
 -------------------
-To clone and run the repository scripts, enter these commands in your te
+To clone and run the repository scripts, enter these commands in your terminal:
+<pre> git clone git@github.com:ex
