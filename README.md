@@ -14,4 +14,5 @@ Install necessary libraries by typing the following commands in your console:
 GETTING STARTED
 -------------------
 To clone and run the repository scripts, enter these commands in your terminal:
-<pre> git clone git@github.com:ex
+<pre> git clone git@github.com:exampleblob/NLP-Python-NLTK.git </pre>
+<p
