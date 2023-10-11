@@ -21,4 +21,4 @@ To clone and run the repository scripts, enter these commands in your terminal:
 
 LICENSE
 -------
-Licensed 
+Licensed under GNU General Public License v3.0 (GPLv3).
